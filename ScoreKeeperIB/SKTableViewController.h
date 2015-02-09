@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SKTableViewController.h
 //  ScoreKeeperIB
 //
 //  Created by Jordan Nelson on 2/9/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SKTableViewController : UITableViewController
 
 @end
-

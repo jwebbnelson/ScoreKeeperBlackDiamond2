@@ -1,25 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vee-d7-A3c">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Table View Controller-->
+        <scene sceneID="yE8-cb-RpW">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="vee-d7-A3c" customClass="SKTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="HFU-zt-zqf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="93" id="S0A-Fe-qqG" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S0A-Fe-qqG" id="UGD-8y-uRs">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-Mz-d2d">
+                                            <rect key="frame" x="16" y="33" width="191" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Scd-vC-BR9">
+                                            <rect key="frame" x="220" y="50" width="94" height="29"/>
+                                        </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-nr-DHv">
+                                            <rect key="frame" x="270" y="37" width="61" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Scd-vC-BR9" secondAttribute="trailing" constant="18" id="1QE-Cj-F2F"/>
+                                        <constraint firstItem="jd8-Mz-d2d" firstAttribute="leading" secondItem="UGD-8y-uRs" secondAttribute="leadingMargin" constant="8" id="5AX-6q-0GU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Scd-vC-BR9" secondAttribute="bottom" constant="21" id="5BO-vh-awg"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dCb-nr-DHv" secondAttribute="bottom" constant="25" id="JAT-h8-gCI"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="jd8-Mz-d2d" secondAttribute="trailing" constant="230" id="RGQ-hc-mnH"/>
+                                        <constraint firstItem="Scd-vC-BR9" firstAttribute="leading" secondItem="dCb-nr-DHv" secondAttribute="trailing" constant="49" id="Uyj-tc-n3f"/>
+                                        <constraint firstItem="dCb-nr-DHv" firstAttribute="leading" secondItem="jd8-Mz-d2d" secondAttribute="trailing" constant="8" id="WDg-sA-uLv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jd8-Mz-d2d" secondAttribute="bottom" constant="19" id="ySH-54-9Dv"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="5AX-6q-0GU"/>
+                                            <exclude reference="RGQ-hc-mnH"/>
+                                            <exclude reference="ySH-54-9Dv"/>
+                                            <exclude reference="JAT-h8-gCI"/>
+                                            <exclude reference="WDg-sA-uLv"/>
+                                            <exclude reference="1QE-Cj-F2F"/>
+                                            <exclude reference="5BO-vh-awg"/>
+                                            <exclude reference="Uyj-tc-n3f"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="constraints">
+                                            <include reference="5AX-6q-0GU"/>
+                                            <include reference="RGQ-hc-mnH"/>
+                                            <include reference="ySH-54-9Dv"/>
+                                            <include reference="JAT-h8-gCI"/>
+                                            <include reference="WDg-sA-uLv"/>
+                                            <include reference="1QE-Cj-F2F"/>
+                                            <include reference="5BO-vh-awg"/>
+                                            <include reference="Uyj-tc-n3f"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="player" destination="jd8-Mz-d2d" id="dMn-Je-ujA"/>
+                                    <outlet property="score" destination="dCb-nr-DHv" id="Hpw-DJ-hL0"/>
+                                    <outlet property="scoreChanger" destination="Scd-vC-BR9" id="nHq-hw-kl5"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vee-d7-A3c" id="oda-3e-NbC"/>
+                            <outlet property="delegate" destination="vee-d7-A3c" id="Vnc-ga-r09"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhI-92-Ppa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="366" y="115.5"/>
         </scene>
     </scenes>
 </document>
