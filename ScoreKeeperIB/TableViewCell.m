@@ -8,7 +8,7 @@
 
 #import "TableViewCell.h"
 
-@interface TableViewCell ()
+@interface TableViewCell () <UITextFieldDelegate>
     
 @property (strong, nonatomic) IBOutlet UITextField *player;
 
@@ -24,14 +24,12 @@
 
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
 
-    
-    [self.scoreChanger addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
-    
     return self;
 }
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    [self.scoreChanger addTarget:self action:@selector(stepperChanged:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -44,5 +42,11 @@
     double value = [self.scoreChanger value];
     self.score.text = [NSString stringWithFormat:@"%d",(int)value];
 }
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
 
 @end
