@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vee-d7-A3c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vee-d7-A3c">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -20,7 +20,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S0A-Fe-qqG" id="UGD-8y-uRs">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-Mz-d2d">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Player Name..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jd8-Mz-d2d">
                                             <rect key="frame" x="16" y="33" width="191" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
@@ -56,11 +56,11 @@
                                             <exclude reference="5AX-6q-0GU"/>
                                             <exclude reference="RGQ-hc-mnH"/>
                                             <exclude reference="ySH-54-9Dv"/>
-                                            <exclude reference="JAT-h8-gCI"/>
-                                            <exclude reference="WDg-sA-uLv"/>
                                             <exclude reference="1QE-Cj-F2F"/>
                                             <exclude reference="5BO-vh-awg"/>
                                             <exclude reference="Uyj-tc-n3f"/>
+                                            <exclude reference="JAT-h8-gCI"/>
+                                            <exclude reference="WDg-sA-uLv"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
@@ -68,11 +68,11 @@
                                             <include reference="5AX-6q-0GU"/>
                                             <include reference="RGQ-hc-mnH"/>
                                             <include reference="ySH-54-9Dv"/>
-                                            <include reference="JAT-h8-gCI"/>
-                                            <include reference="WDg-sA-uLv"/>
                                             <include reference="1QE-Cj-F2F"/>
                                             <include reference="5BO-vh-awg"/>
                                             <include reference="Uyj-tc-n3f"/>
+                                            <include reference="JAT-h8-gCI"/>
+                                            <include reference="WDg-sA-uLv"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>

@@ -15,6 +15,8 @@
 		83F274831A89647E0050E5D8 /* ScoreKeeperIBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F274821A89647E0050E5D8 /* ScoreKeeperIBTests.m */; };
 		83F274941A8967CF0050E5D8 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F274921A8967CF0050E5D8 /* TableViewCell.m */; };
 		83F2749D1A896EB30050E5D8 /* SKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F2749C1A896EB30050E5D8 /* SKTableViewController.m */; };
+		83F514681A8EB38B002D659B /* PlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F514671A8EB38B002D659B /* PlayerController.m */; };
+		83F5146C1A8EB438002D659B /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 83F5146B1A8EB438002D659B /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		83F274921A8967CF0050E5D8 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		83F2749B1A896EB30050E5D8 /* SKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTableViewController.h; sourceTree = "<group>"; };
 		83F2749C1A896EB30050E5D8 /* SKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTableViewController.m; sourceTree = "<group>"; };
+		83F514661A8EB38B002D659B /* PlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerController.h; sourceTree = "<group>"; };
+		83F514671A8EB38B002D659B /* PlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerController.m; sourceTree = "<group>"; };
+		83F5146A1A8EB438002D659B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		83F5146B1A8EB438002D659B /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +92,12 @@
 			children = (
 				83F2746A1A89647E0050E5D8 /* AppDelegate.h */,
 				83F2746B1A89647E0050E5D8 /* AppDelegate.m */,
-				83F274701A89647E0050E5D8 /* Main.storyboard */,
 				83F274911A8967CF0050E5D8 /* TableViewCell.h */,
 				83F274921A8967CF0050E5D8 /* TableViewCell.m */,
 				83F2749B1A896EB30050E5D8 /* SKTableViewController.h */,
 				83F2749C1A896EB30050E5D8 /* SKTableViewController.m */,
+				83F514691A8EB3E6002D659B /* Players */,
+				83F274701A89647E0050E5D8 /* Main.storyboard */,
 				83F274661A89647E0050E5D8 /* Supporting Files */,
 			);
 			path = ScoreKeeperIB;
@@ -122,6 +129,17 @@
 				83F274811A89647E0050E5D8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83F514691A8EB3E6002D659B /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				83F5146A1A8EB438002D659B /* Player.h */,
+				83F5146B1A8EB438002D659B /* Player.m */,
+				83F514661A8EB38B002D659B /* PlayerController.h */,
+				83F514671A8EB38B002D659B /* PlayerController.m */,
+			);
+			name = Players;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +245,8 @@
 				83F2746C1A89647E0050E5D8 /* AppDelegate.m in Sources */,
 				83F274941A8967CF0050E5D8 /* TableViewCell.m in Sources */,
 				83F274691A89647E0050E5D8 /* main.m in Sources */,
+				83F514681A8EB38B002D659B /* PlayerController.m in Sources */,
+				83F5146C1A8EB438002D659B /* Player.m in Sources */,
 				83F2749D1A896EB30050E5D8 /* SKTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +438,7 @@
 				83F274881A89647E0050E5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F274891A89647E0050E5D8 /* Build configuration list for PBXNativeTarget "ScoreKeeperIBTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +447,7 @@
 				83F2748B1A89647E0050E5D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Player.h"
 
 @interface PlayerController : NSObject
+
+@property (nonatomic, readonly) NSArray *players;
+
++(PlayerController *)sharedInstance;
+
+-(void)loadFromDefaults;
+-(void)addPlayer:(Player *)player;
+-(void)removeEntry:(Player *)player;
 
 @end
